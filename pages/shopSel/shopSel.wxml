@@ -1,0 +1,20 @@
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+  <block wx:for="{{imgUrls}}">  
+    <swiper-item>  
+      <navigator url="{{item.link}}" hover-class="navigator-hover">  
+      <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+      </navigator>   
+    </swiper-item>  
+  </block>  
+</swiper>
+<scroll-view scroll-y style="min-height: 280px;" enable-back-to-top="{{true}}">  
+  <div class="weui-cells">
+    <a class="weui-cell weui-cell_access"  wx:for="{{shopAdd}}" bindtap="goShop" data-shopid='{{index}}'>
+      <div class="weui-cell__bd">
+        <p>{{item}}</p>
+      </div>
+      <div class="weui-cell__ft"></div>
+    </a> 
+  </div>
+  <view class="weui-footer">已加载全部</view> 
+</scroll-view>

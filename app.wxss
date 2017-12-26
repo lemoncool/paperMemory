@@ -9,3 +9,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.block {
+  height:30rpx;
+  width:100%;
+  background-color: #F8F8F8;
+  display: block;
+}

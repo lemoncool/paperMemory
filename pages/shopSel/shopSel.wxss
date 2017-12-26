@@ -1,0 +1,12 @@
+/* pages/start/start.wxss */
+.swiper{
+  height: 400rpx;
+}
+.slide-image{  
+    width: 100%;
+}
+::-webkit-scrollbar{
+  width:0;
+  height:0;
+  color: transparent;
+}
