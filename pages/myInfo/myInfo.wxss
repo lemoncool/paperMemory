@@ -1,0 +1,23 @@
+/* pages/start/start.wxss */
+.weui-header{
+  height: 260rpx;
+  width:100%;
+  border-bottom: 1px solid #efeff4;
+}
+.holder{
+  height:45rpx;
+}
+.weui-head{
+  margin: 0 auto;
+  text-align: center;
+}
+.headPic{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+.weui-name{
+  font-size: 15px;
+  color: #383838;
+   margin-top: 10rpx; 
+}
