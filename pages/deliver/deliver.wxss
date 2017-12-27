@@ -1,0 +1,12 @@
+.weui-label{
+  width:190rpx;
+}
+
+/*隐藏  */
+.hide{
+ display: none;
+}
+/*显示  */
+.show{ 
+ display: block;
+}

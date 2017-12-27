@@ -1,0 +1,49 @@
+<div class="block"></div>
+<div class="weui-cells weui-cells_form">
+  <div class="weui-cell">
+    <label class="weui-label">学校名称</label>
+    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+  </div>
+  <div class="weui-cell">
+    <label for="" class="weui-label">联系方式</label>
+    <input class="weui-input" type="date" value="" />
+  </div>
+</div>
+<div class="block"></div>
+<div class="weui-cells weui-cells_form">
+  <div class="weui-cell">
+    <label class="weui-label">配送方式</label>
+   <radio-group class="radio-group" bindchange="deliverChange">
+      <label class="radio" wx:for="{{deliverType}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </div>
+  <!-- <div wx:if="{{isDeliver}}"> -->
+  <!--自取  -->
+  <div class='{{isDeliver == true? "hide":"show"}}'>
+    <div class="weui-cell">
+      <label for="" class="weui-label">自取地址</label>
+      <input class="weui-input" type="date" value="" />
+    </div>
+    <div class="weui-cell">
+      <label for="" class="weui-label">自取时间</label>
+      <input class="weui-input" type="date" value="" />
+    </div>
+  </div>
+  <!--  配送-->
+  <div  class='{{isDeliver == false? "hide":"show"}}'>
+    <div class="weui-cell">
+      <label for="" class="weui-label">配送地址</label>
+      <input class="weui-input" type="date" value="" />
+    </div>
+    <div class="weui-cell">
+      <label for="" class="weui-label">配送时间</label>
+      <input class="weui-input" type="date" value="" />
+    </div>
+    <div class="weui-cell">
+      <label for="" class="weui-label">配送费用</label>
+      <input class="weui-input" type="date" value="" />
+    </div>
+  </div>
+</div>

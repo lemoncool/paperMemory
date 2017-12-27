@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/deliver/deliver",
     "pages/order/order",
     "pages/shopSel/shopSel",
     "pages/myInfo/myInfo",
@@ -19,13 +20,13 @@
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/shopSel/shopSel",
+        "pagePath": "pages/order/order",
         "iconPath": "images/print.jpg",
         "selectedIconPath": "images/print_cur.jpg"
       },
       {
         "text": "订单",
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/deliver/deliver",
         "iconPath": "images/order.jpg",
         "selectedIconPath": "images/order_cur.jpg"
       },

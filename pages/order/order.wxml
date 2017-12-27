@@ -1,8 +1,8 @@
 <!--order.wxml-->
-<div class="weui-cells__title">表单</div>
+<div class="weui-cells__title">订单详情</div>
 <div class="weui-cells weui-cells_form">
   <div class="weui-cell">
-    <label class="weui-label">手机号</label>
+    <label class="weui-label">手机</label>
     <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
   </div>
   <div class="weui-cell">
@@ -15,24 +15,39 @@
   </div>
 </div>
 <div class="block"></div>
-<div class="weui-cells__title">参数</div>
+<div class="weui-cells__title">打印参数</div>
 <div class="weui-cells weui-cells_form">
   <div class="weui-cell">
     <label class="weui-label">份数</label>
     <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
   </div>
-  <div class="weui-cell">
-    <label for="" class="weui-label">色彩</label>
-    <input class="weui-input" type="date" value="" />
-  </div>
   <div class="weui-cell weui-cell_select weui-cell_select-after">
     <label for="" class="weui-label">纸型</label>
-    <div>
-      <select class="weui-select" name="select2">
-        <option value="1">中国</option>
-        <option value="2">美国</option>
-        <option value="3">英国</option>
-      </select>
-    </div>
+    <div class="weui-cell__bd" bindtap="clickPaperType">{{defaultType}}</div>
+    <view class="selectArea" hidden="{{selectArea}}">
+      <view class="select_one" bindtap="mySelect" wx:for="{{papeTypeList}}" data-me="{{item}}">{{item}}</view>
+    </view>
   </div>
+  <!--颜色 -->
+   <div class="weui-cell">
+    <label class="weui-label">颜色</label>
+    <radio-group class="radio-group" bindchange="colorChange">
+      <label class="radio" wx:for="{{colorType}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </div>
+  <!--打印方式 -->
+  <div class="weui-cell">
+    <label class="weui-label">打印方式</label>
+    <radio-group class="radio-group" bindchange="sideChange">
+      <label class="radio" wx:for="{{sideType}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </div> 
 </div>
+<!--钱数结算  -->
+<view class='totalMoney'>￥{{money}}</view>
+<!--提交按钮  -->
+<button class="weui-btn weui-btn_primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="submit"> 提交订单 </button>

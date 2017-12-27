@@ -10,13 +10,13 @@
 }
 
 .weui-label {
-  width: 70px;
+  width: 170rpx;
   word-wrap: break-word;
   word-break: break-all;
 }
 
 .weui-input {
-  height: 2.em;
+  height: 2em;
   min-height: 2em;
   line-height: 2em;
 }

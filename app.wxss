@@ -15,3 +15,9 @@
   background-color: #F8F8F8;
   display: block;
 }
+.radio {
+  margin-right: 10rpx;
+  height: 2em;
+  min-height: 2em;
+  line-height: 2em;
+}

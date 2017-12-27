@@ -16,7 +16,7 @@ Page({
       } 
     ],
     shopAdd: [
-      '北京', '上海', '北京', '上海', '北京', '上海', '北京', '上海','北京', '上海'
+      '北京', '上海'
     ],
     indicatorDots: true,
     autoplay: true,
