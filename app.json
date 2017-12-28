@@ -1,8 +1,11 @@
 {
   "pages": [
-    "pages/deliver/deliver",
-    "pages/order/order",
+    "pages/myOrder/myOrder",
+    "pages/orderDetail/orderDetail",
+   
     "pages/shopSel/shopSel",
+    "pages/ordersubmit/ordersubmit",
+    "pages/pay/pay",
     "pages/myInfo/myInfo",
     "pages/index/index" 
   ],
@@ -20,13 +23,13 @@
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/shopSel/shopSel",
         "iconPath": "images/print.jpg",
         "selectedIconPath": "images/print_cur.jpg"
       },
       {
         "text": "订单",
-        "pagePath": "pages/deliver/deliver",
+        "pagePath": "pages/myOrder/myOrder",
         "iconPath": "images/order.jpg",
         "selectedIconPath": "images/order_cur.jpg"
       },

@@ -1,0 +1,19 @@
+.fileIcon {
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+}
+
+.desc {
+  width: 70%;
+  margin-right: 15rpx;
+}
+.box_desc{
+  margin-right: 30rpx;
+}

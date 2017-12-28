@@ -10,10 +10,10 @@ Page({
       },
       {
         url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
-      }, 
+      },
       {
         url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-      } 
+      }
     ],
     shopAdd: [
       '北京', '上海'
@@ -21,7 +21,7 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 1000,  
+    duration: 1000,
     // message: 'Hello MINA!'
   },
   onLoad: function () {
@@ -30,5 +30,8 @@ Page({
   goShop: function (e) {
     var shopId = e.currentTarget.dataset.shopid;
     console.log(shopId);
-    }   
+    wx.navigateTo({
+      url: '../ordersubmit/ordersubmit'
+    })
+  }
 })  

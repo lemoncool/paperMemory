@@ -1,0 +1,19 @@
+.weui-cell_select {
+  position: relative;
+}
+
+.selectArea {
+  z-index: 100;
+  position: absolute;
+  right: 60rpx;
+  top: 90rpx;
+}
+
+.select_one {
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+  width: 500rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #fff;
+}

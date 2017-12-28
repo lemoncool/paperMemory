@@ -1,0 +1,85 @@
+<view class="padding-box">
+  <view class="block"></view>
+  <div class="weui-cells">
+    <view class="weui-cell">
+      <label class="weui-label">学校名称</label>
+      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+    </view>
+    <view class="weui-cell">
+      <label for="" class="weui-label">联系方式</label>
+      <input class="weui-input" type="date" value="" />
+    </view>
+  </div>
+  <view class="block"></view>
+  <div class="weui-cells">
+    <view class="weui-cell">
+      <label class="weui-label">配送方式</label>
+      <radio-group class="radio-group" bindchange="deliverChange">
+        <label class="radio" wx:for="{{deliverType}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <!-- <div wx:if="{{isDeliver}}"> -->
+    <!--自取  -->
+    <div class='{{isDeliver == true? "hide":"show"}}'>
+      <view class="weui-cell">
+        <label for="" class="weui-label">自取地址</label>
+        <input class="weui-input" type="date" value="" />
+      </view>
+      <view class="weui-cell">
+        <label for="" class="weui-label">自取时间</label>
+        <input class="weui-input" type="date" value="" />
+      </view>
+    </div>
+    <!--  配送-->
+    <div class='{{isDeliver == false? "hide":"show"}}'>
+      <view class="weui-cell">
+        <label for="" class="weui-label">配送地址</label>
+        <input class="weui-input" type="date" value="" />
+      </view>
+      <view class="weui-cell">
+        <label for="" class="weui-label">配送时间</label>
+        <input class="weui-input" type="date" value="" />
+      </view>
+      <view class="weui-cell">
+        <label for="" class="weui-label">配送费用</label>
+        <input class="weui-input" type="date" value="" />
+      </view>
+    </div>
+    <view class="block"></view>
+    <!--信息汇总显示  -->
+    <view class='infoArea'>
+      <icon type="clear" size="20" class='infoIcon' />
+      <view class='docName'>文档文档文档.doc</view>
+      <view>
+        <text class='infoItem'>类型：A4 </text>
+        <text class='infoItem'>规则：彩色双面</text>
+      </view>
+      <view>
+        <text class='infoItem'>份数：2份</text>
+        <text class='infoItem'>页数：20页/份</text>
+      </view>
+      <view>
+        <text class='infoItem'>合计：20元</text>
+      </view>
+    </view>
+    <view class='infoArea'>
+      <view class='docName'>文档文档文档.doc</view>
+      <view>
+        <text class='infoItem'>类型：A4 </text>
+        <text class='infoItem'>规则：彩色双面</text>
+      </view>
+      <view>
+        <text class='infoItem'>份数：2份</text>
+        <text class='infoItem'>页数：20页/份</text>
+      </view>
+      <view>
+        <text class='infoItem'>合计：20元</text>
+      </view>
+    </view>
+    <!--钱数结算  -->
+    <view class='totalMoney'>￥{{money}}</view>
+    <button class="weui-btn weui-btn_primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="submit"> 确认支付 </button>
+  </div>
+</view>

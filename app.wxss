@@ -21,3 +21,19 @@
   min-height: 2em;
   line-height: 2em;
 }
+
+.totalMoney{
+  width: 40%;
+  text-align: center;
+  margin: 50rpx auto;
+  color:#808080;
+  font-size: 18px;  
+}
+
+.weui-btn {
+  width: 94% !important;
+  margin: 0 auto;
+}
+.padding-box{
+  padding-bottom: 5px;
+}
