@@ -17,3 +17,13 @@
 .box_desc{
   margin-right: 30rpx;
 }
+.btn_mini {
+  width:160rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  font-size: 13px;
+  color: #fff;
+  margin-right: 20rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
