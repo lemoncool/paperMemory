@@ -14,9 +14,6 @@
   width: 70%;
   margin-right: 15rpx;
 }
-.box_desc{
-  margin-right: 30rpx;
-}
 .btn_mini {
   width:160rpx;
   height:70rpx;

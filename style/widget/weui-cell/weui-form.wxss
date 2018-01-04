@@ -44,6 +44,7 @@
 .weui-textarea {
   display: block;
   width: 100%;
+
 }
 
 .weui-textarea-counter {

@@ -1,12 +1,15 @@
 {
   "pages": [
+    "pages/addAddress/addAddress",
+    "pages/myInfo/myInfo",
+    "pages/myAddr/myAddr",
+    "pages/location/location",
     "pages/myOrder/myOrder",
     "pages/orderDetail/orderDetail",
-   
     "pages/shopSel/shopSel",
     "pages/ordersubmit/ordersubmit",
     "pages/pay/pay",
-    "pages/myInfo/myInfo",
+    "pages/suggestion/suggestion",
     "pages/index/index" 
   ],
   "window": {

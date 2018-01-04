@@ -1,0 +1,9 @@
+<div class="block"></div>
+<form bindsubmit="evaSubmit">
+  <view class='textBox'>
+    <textarea name="evaContent" maxlength="{{noteMaxLen}}" value="{{evaContent}}" class="weui-textarea" placeholder="请填写10个字以上的问题描述以便我们提供更好的服务" bindinput="bindWordLimit" />
+    <text class='inputCount'>{{currentNoteLen|0}}/{{noteMaxLen}}</text>
+  </view>
+  <div class="block"></div>
+  <button class="weui-btn weui-btn_primary" size="{{default}}" disabled="{{disabled}}" bindtap="suggSubmit"> 提交 </button>
+</form>

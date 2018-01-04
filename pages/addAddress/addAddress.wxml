@@ -1,0 +1,37 @@
+<div class="block"></div>
+<view class="padding-box">
+  <div class="weui-cells__title">联系人</div>
+  <div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+      <label class="weui-label">姓名</label>
+      <input class="weui-input" type="number" placeholder="请输入姓名" />
+    </div>
+    <!--颜色 -->
+    <div class="weui-cell">
+      <label class="weui-label"></label>
+      <radio-group class="radio-group" bindchange="sexChange">
+        <label class="radio" wx:for="{{sexType}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </div>
+    <div class="weui-cell">
+      <label for="" class="weui-label">手机</label>
+      <input class="weui-input" type="datetime-local" placeholder="请输入收货的手机号码" />
+    </div>
+  </div>
+  <div class="block"></div>
+  <div class="weui-cells__title">收货地址</div>
+  <div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+      <label class="addrTitle">小区/大厦</label>
+      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+    </div>
+    <div class="weui-cell">
+      <label class="addrTitle">楼号/门牌号</label>
+      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="例:16号楼427室" />
+    </div>
+  </div>
+  <!--提交按钮  -->
+  <button class="weui-btn weui-btn_primary" size="{{default}}" disabled="{{disabled}}" bindtap="submit" bindtap="jumpToPay"> 提交订单 </button>
+</view>

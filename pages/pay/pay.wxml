@@ -80,6 +80,6 @@
     </view>
     <!--钱数结算  -->
     <view class='totalMoney'>￥{{money}}</view>
-    <button class="weui-btn weui-btn_primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="submit"> 确认支付 </button>
+    <button class="weui-btn weui-btn_primary" size="{{default}}" disabled="{{false}}" bindtap="submit"> 确认支付 </button>
   </div>
 </view>

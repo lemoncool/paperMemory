@@ -8,7 +8,7 @@
 </view>
 <!-- <view class="weui-footer" bindtap="tapName"> Click me! </view> -->
 <div class="weui-cells">
-  <a class="weui-cell weui-cell_access" href="#">
+  <a class="weui-cell weui-cell_access" bindtap="goAddress">
     <div class="weui-cell__bd">
       <p>收货地址</p>
     </div>
@@ -21,15 +21,15 @@
       <div class="weui-cell__ft">
       </div>
   </a>
-  <a class="weui-cell weui-cell_access"  bindtap="goTel">
+  <a class="weui-cell weui-cell_access" bindtap="goTel">
       <div class="weui-cell__bd">
         <p>我的客服</p>
       </div>
       <div class="weui-cell__ft"></div>
   </a>
-  <a class="weui-cell weui-cell_access" href="#">
+  <a class="weui-cell weui-cell_access" bindtap="goSuggestion">
       <div class="weui-cell__bd">
-        <p>投诉建议</p>
+        <p>意见反馈</p>
       </div>
       <div class="weui-cell__ft"></div>
   </a>

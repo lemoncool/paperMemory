@@ -29,7 +29,9 @@
   color:#808080;
   font-size: 18px;  
 }
-
+.box_desc{
+  margin-right: 30rpx;
+}
 .weui-btn {
   width: 94% !important;
   margin: 0 auto;

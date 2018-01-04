@@ -15,7 +15,7 @@ Page({
       url: '../ordersubmit/ordersubmit'
     })
   },
-  markertap:function(){
+  markertap: function () {
     wx.getLocation({
       type: 'wgs84',
       success: (res) => {
@@ -23,5 +23,21 @@ Page({
         var longitude = res.longitude // 纬度
       }
     })
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   **/
+  getData: function () {
+    var that = this;
+    wx.request({
+      url: "https://www.easy-mock.com/mock/596257bc9adc231f357c4664/restaurant/info",//接口链接
+      method: "GET",
+      success: function (res) {//成功得到数据，对数据进行处理
+        that.setData({//将数据发送到data中
+          restaurant: res.data.data.restaurant,
+          location: wx.getStorageSync('location')
+        })
+      }
+    });
   }
 })  

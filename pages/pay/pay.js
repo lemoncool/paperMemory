@@ -6,8 +6,6 @@ Page({
       { name: 'notDeliver', value: '到店自取', checked: 'true' },
       { name: 'deliver', value: '送货上门' }
     ],
-    primarySize: 'default',
-    disabled: false,
     money: 500
   },
   // 配送方式选择

@@ -1,0 +1,22 @@
+.userAddr{
+  color: #B0B0B0;
+  margin-top: 10rpx;
+  /* color:#0ABA07; */
+}
+.addrItem{
+  width: 85%;
+  border-right: 1px solid #eee;
+  margin-right: 8px;
+   font-size: 16px;
+}
+image{
+  width:30px;
+  height:30px;
+}
+.img{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.addItem{
+  width:90%;
+}
