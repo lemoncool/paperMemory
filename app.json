@@ -1,9 +1,10 @@
 {
   "pages": [
+   
     "pages/addAddress/addAddress",
+    "pages/location/location",
     "pages/myInfo/myInfo",
     "pages/myAddr/myAddr",
-    "pages/location/location",
     "pages/myOrder/myOrder",
     "pages/orderDetail/orderDetail",
     "pages/shopSel/shopSel",

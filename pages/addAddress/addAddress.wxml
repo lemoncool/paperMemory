@@ -23,9 +23,9 @@
   <div class="block"></div>
   <div class="weui-cells__title">收货地址</div>
   <div class="weui-cells weui-cells_form">
-    <div class="weui-cell">
+    <div class="weui-cell" bindtap="getLocation">
       <label class="addrTitle">小区/大厦</label>
-      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+      <image src='../../images/loca1.png' class='myImg'></image>
     </div>
     <div class="weui-cell">
       <label class="addrTitle">楼号/门牌号</label>
@@ -33,5 +33,5 @@
     </div>
   </div>
   <!--提交按钮  -->
-  <button class="weui-btn weui-btn_primary" size="{{default}}" disabled="{{disabled}}" bindtap="submit" bindtap="jumpToPay"> 提交订单 </button>
+  <button class="weui-btn weui-btn_primary save" size="{{default}}" disabled="{{disabled}}" bindtap="submit" bindtap="backMyAddr">保存</button>
 </view>

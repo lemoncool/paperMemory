@@ -23,3 +23,15 @@
   word-wrap: break-word;
   word-break: break-all;
 }
+.save{
+  position: fixed;
+  left:3%;
+  bottom: 1%;
+}
+image{
+  width:30px;
+  height:30px;
+}
+.myImg{
+  vertical-align: middle;
+}

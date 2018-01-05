@@ -1,7 +1,7 @@
 <!--pages/myAddr/myAddr.wxml-->
 <view class='block'></view>
 <div class="weui-cells">
-  <a class="weui-cell weui-cell_access" href="#">
+  <a class="weui-cell weui-cell_access" bindtap="goAdd">
     <div class="addItem">
       <image src='../../images/add.png' class='img'></image>
       <p>新增收货地址</p>
@@ -14,8 +14,8 @@
   <a class="weui-cell weui-cell_access" href="#">
     <div class="addrItem">
       <view class='userInfo'>
-        <text class='box_desc'>1个文件</text>
-        <text>订单制作中</text>
+        <text class='box_desc'>李雷</text>
+        <text>155555555555</text>
       </view>
       <view class='userAddr'>北京市朝阳区朝阳区</view>
     </div>
@@ -24,8 +24,8 @@
   <a class="weui-cell weui-cell_access" href="#">
     <div class="addrItem">
       <view class='userInfo'>
-        <text class='box_desc'>1个文件</text>
-        <text>订单制作中</text>
+        <text class='box_desc'>韩梅梅</text>
+        <text>15777777777</text>
       </view>
       <view class='userAddr'>北京市朝阳区朝阳区</view>
     </div>
