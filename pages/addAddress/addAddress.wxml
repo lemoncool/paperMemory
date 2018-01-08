@@ -26,6 +26,7 @@
     <div class="weui-cell" bindtap="getLocation">
       <label class="addrTitle">小区/大厦</label>
       <image src='../../images/loca1.png' class='myImg'></image>
+      <view>{{name}}</view>
     </div>
     <div class="weui-cell">
       <label class="addrTitle">楼号/门牌号</label>
@@ -35,3 +36,6 @@
   <!--提交按钮  -->
   <button class="weui-btn weui-btn_primary save" size="{{default}}" disabled="{{disabled}}" bindtap="submit" bindtap="backMyAddr">保存</button>
 </view>
+
+
+<!-- <button bindtap="mapViewTap" style="margin:10px">查看地图</button> -->

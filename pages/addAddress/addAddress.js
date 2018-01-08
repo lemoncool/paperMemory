@@ -6,6 +6,7 @@ Page({
       { name: 'female', value: '女士', checked: 'true' }
     ],
     disabled: false,
+    location:{},
   },
   // 性别单选按钮
   sexChangee: function (e) {
@@ -16,25 +17,34 @@ Page({
       url: '../myAddr/myAddr'
     })
   },
+  // mapViewTap: function () {
+  //   wx.getLocation({
+  //     type: 'gcj02', //返回可以用于wx.openLocation的经纬
+  //     success: function (res) {
+  //       console.log(res)
+  //       wx.openLocation({
+  //         latitude: res.latitude,
+  //         longitude: res.longitude,
+  //         scale: 28
+  //       })
+  //     }
+  //   })
+  // },
   getLocation: function () {
-    wx.getLocation({
-      type: 'gcj02',
+    var that = this;
+    wx.chooseLocation({
       success: function (res) {
-        var latitude = res.latitude
-        var longitude = res.longitude
-        wx.request({
-          url: 'http://api.map.baidu.com/geocoder/v2/?ak=btsVVWf0TM1zUBEbzFz6QqWF&coordtype=gcj02ll&location=' + latitude + ',' + longitude + '&output=json&pois=0',
-          method: "get",
-          success: function (res) {
-            console.log(res.data.result.formatted_address)
-            wx.setStorageSync('location', res.data.result.formatted_address.substr(res.data.result.formatted_address.indexOf('市') + 1, 10))
+        console.log(res)
+        that.setData({
+          location: {
+            latitude: res.latitude,
+            longitude: res.longitude,
+            name: res.name
           }
         })
+        console.log('location',location);
       }
     })
-    // wx.switchTab({
-    //   url: '/pages/home/home'
-    // })
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
