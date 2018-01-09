@@ -62,7 +62,7 @@ Page({
       wx.switchTab({
         url: '../myInfo/myInfo'
       })
-    })
+    },1200)
   },
   evaSubmit: function (e) {
 

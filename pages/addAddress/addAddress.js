@@ -6,7 +6,8 @@ Page({
       { name: 'female', value: '女士', checked: 'true' }
     ],
     disabled: false,
-    location:{},
+    location: {},
+    imgHide: false,
   },
   // 性别单选按钮
   sexChangee: function (e) {
@@ -39,10 +40,14 @@ Page({
           location: {
             latitude: res.latitude,
             longitude: res.longitude,
-            name: res.name
+            name: res.name.substr(0, 8) + "..."
           }
-        })
-        console.log('location',location);
+        });
+        if (that.data.location.name) {
+          that.setData({
+            imgHide:true
+          })
+        }  
       }
     })
   },

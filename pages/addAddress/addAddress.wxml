@@ -24,12 +24,12 @@
   <div class="weui-cells__title">收货地址</div>
   <div class="weui-cells weui-cells_form">
     <div class="weui-cell" bindtap="getLocation">
-      <label class="addrTitle">小区/大厦</label>
-      <image src='../../images/loca1.png' class='myImg'></image>
-      <view>{{name}}</view>
+      <label class="addrTitle">我的位置</label>
+      <image src='../../images/loca1.png' class='myImg' hidden='{{imgHide}}'></image>
+      <view>{{location.name}}</view>
     </div>
     <div class="weui-cell">
-      <label class="addrTitle">楼号/门牌号</label>
+      <label class="addrTitle">详细地址</label>
       <input class="weui-input" type="number" pattern="[0-9]*" placeholder="例:16号楼427室" />
     </div>
   </div>

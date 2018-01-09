@@ -19,10 +19,11 @@
 }
 
 .addrTitle {
-  width: 250rpx;
+  width: 180rpx;
   word-wrap: break-word;
   word-break: break-all;
 }
+
 .save{
   position: fixed;
   left:3%;

@@ -28,8 +28,12 @@
         <input class="weui-input" type="date" value="" />
       </view>
       <view class="weui-cell">
-        <label for="" class="weui-label">自取时间</label>
-        <input class="weui-input" type="date" value="" />
+        <picker class="dataPicker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" data-method='1'>
+          <view>
+            自取时间
+            <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>{{time1}}
+          </view>
+        </picker>
       </view>
     </div>
     <!--  配送-->
@@ -39,8 +43,12 @@
         <input class="weui-input" type="date" value="" />
       </view>
       <view class="weui-cell">
-        <label for="" class="weui-label">配送时间</label>
-        <input class="weui-input" type="date" value="" />
+        <picker class="dataPicker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" data-method='2'>
+          <view>
+            配送时间
+            <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>{{time2}}
+          </view>
+        </picker>
       </view>
       <view class="weui-cell">
         <label for="" class="weui-label">配送费用</label>
@@ -49,33 +57,20 @@
     </div>
     <view class="block"></view>
     <!--信息汇总显示  -->
-    <view class='infoArea'>
-      <icon type="clear" size="20" class='infoIcon' />
-      <view class='docName'>文档文档文档.doc</view>
+    <view class='infoArea' wx:for="{{infoArea}}" >
+    <!-- <view class='{{infoAreaShow==={{index}}? "hide":"show"}}'>fdsfsfdrstf</view> -->
+      <icon type="clear" size="20" class='infoIcon' catchtap='clearInfo' data-infoid='{{index}}'/>
+      <view class='docName'>{{item.title}}</view>
       <view>
-        <text class='infoItem'>类型：A4 </text>
-        <text class='infoItem'>规则：彩色双面</text>
+        <text class='infoItem'>类型：{{item.type}}</text>
+        <text class='infoItem'>规则：{{item.colorType}}</text>
       </view>
       <view>
-        <text class='infoItem'>份数：2份</text>
-        <text class='infoItem'>页数：20页/份</text>
+        <text class='infoItem'>份数：{{item.count}}份</text>
+        <text class='infoItem'>页数：{{item.pages}}页/份</text>
       </view>
       <view>
-        <text class='infoItem'>合计：20元</text>
-      </view>
-    </view>
-    <view class='infoArea'>
-      <view class='docName'>文档文档文档.doc</view>
-      <view>
-        <text class='infoItem'>类型：A4 </text>
-        <text class='infoItem'>规则：彩色双面</text>
-      </view>
-      <view>
-        <text class='infoItem'>份数：2份</text>
-        <text class='infoItem'>页数：20页/份</text>
-      </view>
-      <view>
-        <text class='infoItem'>合计：20元</text>
+        <text class='infoItem'>合计：{{item.total}}元</text>
       </view>
     </view>
     <!--钱数结算  -->

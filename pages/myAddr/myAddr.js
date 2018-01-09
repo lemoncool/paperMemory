@@ -13,6 +13,12 @@ Page({
       url: '../addAddress/addAddress'
     })
   },
+  goEdit: function () {
+    wx.navigateTo({
+      url: '../addAddress/addAddress'
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
