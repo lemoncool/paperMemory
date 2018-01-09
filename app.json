@@ -1,15 +1,15 @@
 {
   "pages": [
-   
+    "pages/pay/pay",
+    "pages/shopSel/shopSel",
+    "pages/myAddr/myAddr",
     "pages/addAddress/addAddress",
     "pages/location/location",
     "pages/myInfo/myInfo",
-    "pages/myAddr/myAddr",
     "pages/myOrder/myOrder",
     "pages/orderDetail/orderDetail",
-    "pages/shopSel/shopSel",
     "pages/ordersubmit/ordersubmit",
-    "pages/pay/pay",
+    
     "pages/suggestion/suggestion",
     "pages/index/index" 
   ],
