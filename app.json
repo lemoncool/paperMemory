@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/pay/pay",
     "pages/shopSel/shopSel",
+    "pages/pay/pay",
     "pages/myAddr/myAddr",
     "pages/addAddress/addAddress",
     "pages/location/location",
@@ -9,7 +9,6 @@
     "pages/myOrder/myOrder",
     "pages/orderDetail/orderDetail",
     "pages/ordersubmit/ordersubmit",
-    
     "pages/suggestion/suggestion",
     "pages/index/index" 
   ],

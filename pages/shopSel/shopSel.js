@@ -16,7 +16,7 @@ Page({
       }
     ],
     shopAdd: [
-      '北京', '上海'
+      '农大店', '师院店'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -25,10 +25,19 @@ Page({
     // message: 'Hello MINA!'
   },
   onLoad: function () {
-    console.log('onLoad test');
+    
   },
   goShop: function (e) {
     var shopId = e.currentTarget.dataset.shopid;
+    wx.setStorage({
+      'shopId111': "shopId"
+    })
+    // wx.getStorage({
+    //   aa: 'shopId',
+    //   success: function (res) {
+    //     console.log('res.data',res.data)
+    //   }
+    // })
     console.log(shopId);
     wx.navigateTo({
       url: '../ordersubmit/ordersubmit'

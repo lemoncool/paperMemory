@@ -58,8 +58,7 @@
     <view class="block"></view>
     <!--信息汇总显示  -->
     <view class='infoArea' wx:for="{{infoArea}}" >
-    <!-- <view class='{{infoAreaShow==={{index}}? "hide":"show"}}'>fdsfsfdrstf</view> -->
-      <icon type="clear" size="20" class='infoIcon' catchtap='clearInfo' data-infoid='{{index}}'/>
+      <icon type="clear" size="20" class='infoIcon' catchtap='deleteInfo' data-infoid='{{index}}'/>
       <view class='docName'>{{item.title}}</view>
       <view>
         <text class='infoItem'>类型：{{item.type}}</text>
