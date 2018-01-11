@@ -11,7 +11,7 @@ Page({
       { title: '打印2', type: 'B5', colorType: '黑白单面', count: 3, pages: 10, total: 30 }
     ],
     money: 0,
-    infoAreaShow: 0,
+    shopAddr:"",
   },
   // 配送方式选择
   deliverChange: function (e) {
@@ -20,6 +20,24 @@ Page({
       this.setData({
         isDeliver: false
       })
+      // // 自取时取出缓存中商铺id判断自取点的文本
+      // wx.getStorage({
+      //   key: 'shopIndex',
+      //   success: function (res) {
+      //     console.log('shopIndex', res.data)
+      //     if (res.data == '0') {
+      //       console.log('传入的id为0');
+      //       this.setData({
+      //         shopAddr: '农大'
+      //       })
+      //     } else if (res.data == '1') {
+      //       console.log('传入的id为1');
+      //       this.setData({
+      //         shopAddr: '师院'
+      //       })
+      //     }
+      //   }
+      // })
     } else {
       this.setData({
         isDeliver: true
@@ -67,9 +85,27 @@ Page({
     }
   },
   onLoad: function (options) {
+    var that = this;
+    // 自取时取出缓存中商铺id判断自取点的文本
+    wx.getStorage({
+      key: 'shopIndex',
+      success: function (res) {
+        console.log('shopIndex', res.data)
+        if (res.data == '0') {
+          console.log('传入的id为0');
+          that.setData({
+            shopAddr:'农大'
+          })
+        } else if (res.data == '1') {
+          console.log('传入的id为1');
+          that.setData({
+            shopAddr:'师院'
+          })
+        }
+      }
+    })
     // 页面初始化 options为页面跳转所带来的参数
     this.totalMoney()
-
   },
 
 })

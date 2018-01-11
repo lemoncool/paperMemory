@@ -22,23 +22,19 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
+    shopIndex: '',
     // message: 'Hello MINA!'
   },
   onLoad: function () {
-    
+
   },
   goShop: function (e) {
     var shopId = e.currentTarget.dataset.shopid;
     wx.setStorage({
-      'shopId111': "shopId"
+      key: "shopIndex",
+      data: shopId
     })
-    // wx.getStorage({
-    //   aa: 'shopId',
-    //   success: function (res) {
-    //     console.log('res.data',res.data)
-    //   }
-    // })
-    console.log(shopId);
+    // console.log(shopId);
     wx.navigateTo({
       url: '../ordersubmit/ordersubmit'
     })

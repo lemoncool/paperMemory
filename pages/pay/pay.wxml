@@ -25,7 +25,7 @@
     <div class='{{isDeliver == true? "hide":"show"}}'>
       <view class="weui-cell">
         <label for="" class="weui-label">自取地址</label>
-        <input class="weui-input" type="date" value="" />
+        <view>{{shopAddr}}</view>
       </view>
       <view class="weui-cell">
         <picker class="dataPicker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" data-method='1'>

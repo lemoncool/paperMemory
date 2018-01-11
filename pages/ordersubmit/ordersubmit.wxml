@@ -8,7 +8,7 @@
     </div>
     <div class="weui-cell">
       <label for="" class="weui-label">文件</label>
-      <input class="weui-input" type="date" value="" />
+      <input class="weui-input" type="file" value="" />
     </div>
     <div class="weui-cell">
       <label for="" class="weui-label">页数</label>

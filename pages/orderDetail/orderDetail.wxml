@@ -1,2 +1,34 @@
-<view>gfdgrthg</view>
-<map bindmarkertap="markertap" longitude="116.38" latitude="39.90"></map>
+<view>订单进度</view>
+<view class="track-rcol">
+  <view class="track-list">
+    <ul>
+       <li class="first">
+        <image src='../../images/11.png' class="node-icon"></image> 
+        <span class="time">2016-03-10 18:07</span>
+        <span class="txt">订单已完成</span>
+      </li> 
+      <li>
+        <image src='../../images/22.png' class="node-icon"></image> 
+        <span class="time">2016-03-10 18:07</span>
+        <span class="txt">感谢您在京东购物</span>
+      </li>
+      <li>
+         <image src='../../images/22.png' class="node-icon"></image> 
+        <span class="time">2016-03-10 18:07</span>
+        <span class="txt">感谢您在京东购物</span>
+      </li>
+      <li>
+       <image src='../../images/22.png' class="node-icon"></image> 
+        <span class="time">2016-03-10 18:07</span>
+        <span class="txt">感谢您在京东购物</span>
+      </li>
+      <li>
+       <image src='../../images/22.png' class="node-icon"></image> 
+        <span class="time">2016-03-10 18:07</span>
+        <span class="txt">感谢您在京东购物</span>
+      </li>
+    </ul>
+  </view>
+</view>
+
+  <!-- <map bindmarkertap="markertap" longitude="116.38" latitude="39.90"></map> -->
