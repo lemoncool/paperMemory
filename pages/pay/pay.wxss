@@ -14,17 +14,6 @@
   display: block;
 }
 
-.infoArea {
-  position: relative;
-  margin-left: 15px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f8f8f8;
-}
-
-.docName {
-  margin-bottom: 5px;
-}
-
 .infoItem {
   margin-right: 50rpx;
   font-size: 14px;

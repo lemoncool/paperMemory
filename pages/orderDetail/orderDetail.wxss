@@ -1,63 +1,47 @@
-ul li {
-  list-style: none;
-}
-
 .track-rcol {
-  font-size: 12px;
-  width: 100%;
-  border: 1px solid #eee;
+  padding: 20rpx 0 20rpx 40rpx;
+  font-size: 17px;
 }
 
-.track-list {
-  margin: 20rpx 0;
-  padding-left: 20px;
-}
-
-.track-list li {
+.proItem {
   position: relative;
-  width:100%;
-  padding: 20rpx 0 0 20rpx;
-  height: 18px;
-  line-height: 18px;
+  width: 100%;
+  padding: 20rpx 0 0 30rpx;
+  height: 80rpx;
+  line-height: 55rpx;
   border-left: 1px solid #d9d9d9;
   color: #999;
 }
 
-.track-list li.first {
-  color: red;
-  padding-top: 0;
-  border-left-color: #fff;
+.proItem_now {
+  position: relative;
+  width: 100%;
+  padding: 20rpx 0 0 30rpx;
+  height: 80rpx;
+  line-height: 55rpx;
+  border-left: 1px solid #d9d9d9;
+  color: #0aba07;
 }
 
-.track-list li .node-icon {
+.proItem_now .node-icon {
+  background-color: #0aba07;
+}
+
+.node-icon {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: #999;
   position: absolute;
-  left: -6px;
-  top: 50%;
-  width: 11px;
-  height: 11px;
-  z-index: 2;
+  left: -5px;
+  top: 38%;
 }
 
-.track-list li .time {
-  margin-right: 20px;
-  position: relative;
-  top: 4px;
-  display: inline-block;
-  vertical-align: middle;
+.proItem .time {
+  margin-right: 20rpx;
 }
 
-.track-list li .txt {
-  max-width: 90%;
-  position: relative;
-  top: 4px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.track-list li.first .time {
-  margin-right: 20px;
-}
-
-.track-list li.first .txt {
-  max-width: 90%;
+.infoItem {
+  margin-right: 100rpx;
+  font-size: 16px;
 }

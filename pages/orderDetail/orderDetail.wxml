@@ -1,34 +1,35 @@
-<view>订单进度</view>
+<view class='block'></view>
 <view class="track-rcol">
-  <view class="track-list">
-    <ul>
-       <li class="first">
-        <image src='../../images/11.png' class="node-icon"></image> 
-        <span class="time">2016-03-10 18:07</span>
-        <span class="txt">订单已完成</span>
-      </li> 
-      <li>
-        <image src='../../images/22.png' class="node-icon"></image> 
-        <span class="time">2016-03-10 18:07</span>
-        <span class="txt">感谢您在京东购物</span>
-      </li>
-      <li>
-         <image src='../../images/22.png' class="node-icon"></image> 
-        <span class="time">2016-03-10 18:07</span>
-        <span class="txt">感谢您在京东购物</span>
-      </li>
-      <li>
-       <image src='../../images/22.png' class="node-icon"></image> 
-        <span class="time">2016-03-10 18:07</span>
-        <span class="txt">感谢您在京东购物</span>
-      </li>
-      <li>
-       <image src='../../images/22.png' class="node-icon"></image> 
-        <span class="time">2016-03-10 18:07</span>
-        <span class="txt">感谢您在京东购物</span>
-      </li>
-    </ul>
+  <view class="proItem_now">
+    <text class="node-icon"></text>
+    <text class="time">2016-03-10 18:07</text>
+    <text class="txt">订单已完成</text>
+  </view>
+  <view class='proItem'>
+    <text class="node-icon"></text>
+    <text class="time">2016-03-10 18:07</text>
+    <text class="txt">正在配送</text>
+  </view>
+  <view class='proItem'>
+    <text class="node-icon"></text>
+    <text class="time">2016-03-10 18:07</text>
+    <text class="txt">店家已接单</text>
   </view>
 </view>
-
-  <!-- <map bindmarkertap="markertap" longitude="116.38" latitude="39.90"></map> -->
+<view class='block'></view>
+<!--信息汇总显示  -->
+<view class='infoArea' wx:for="{{infoArea}}">
+  <view class='docName'>{{item.title}}</view>
+  <view>
+    <text class='infoItem'>类型：{{item.type}}</text>
+    <text class='infoItem'>规则：{{item.colorType}}</text>
+  </view>
+  <view>
+    <text class='infoItem'>份数：{{item.count}}份</text>
+    <text class='infoItem'>页数：{{item.pages}}页/份</text>
+  </view>
+  <view>
+    <text class='infoItem'>备注：{{item.extra}}</text>
+  </view>
+</view>
+<!-- <map bindmarkertap="markertap" longitude="116.38" latitude="39.90"></map> -->
