@@ -1,5 +1,7 @@
 /**app.wxss**/
 @import 'style/weui.wxss';
+@import 'style/iconfont.wxss';
+
 .container {
   height: 100%;
   display: flex;
@@ -8,13 +10,15 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
 .block {
-  height:30rpx;
-  width:100%;
-  background-color: #F8F8F8;
+  height: 30rpx;
+  width: 100%;
+  background-color: #f8f8f8;
   display: block;
 }
+
 .radio {
   margin-right: 10rpx;
   height: 2em;
@@ -22,26 +26,29 @@
   line-height: 2em;
 }
 
-.totalMoney{
+.totalMoney {
   width: 40%;
   text-align: center;
   margin: 50rpx auto;
-  color:#808080;
-  font-size: 18px;  
+  color: #808080;
+  font-size: 18px;
 }
-.box_desc{
-  margin-right: 30rpx;
+
+.box_desc {
+  margin-right: 20rpx;
 }
+
 .weui-btn {
   width: 94% !important;
   margin: 0 auto;
 }
-.padding-box{
+
+.padding-box {
   padding-bottom: 5px;
 }
 
-.dataPicker{
-  width:100%;
+.dataPicker {
+  width: 100%;
 }
 
 .infoArea {
@@ -53,4 +60,9 @@
 
 .docName {
   margin-bottom: 5px;
+}
+
+
+.rt {
+  float: right;
 }
