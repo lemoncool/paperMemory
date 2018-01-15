@@ -1,3 +1,0 @@
-# paperMemory
-paperMemory
-hello world
