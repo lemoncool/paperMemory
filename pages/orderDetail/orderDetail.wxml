@@ -18,18 +18,63 @@
 </view>
 <view class='block'></view>
 <!--信息汇总显示  -->
-<view class='infoArea' wx:for="{{infoArea}}">
-  <view class='docName'>{{item.title}}</view>
-  <view>
-    <text class='infoItem'>类型：{{item.type}}</text>
-    <text class='infoItem'>规则：{{item.colorType}}</text>
+<view class="shopName">{{shopName}}</view>
+<view class='orderItem' wx:for="{{orderItem}}">
+  <view class='docName'>
+    <text>{{item.title}}</text>
+    <text class='rt'>￥{{item.money}}</text>
   </view>
   <view>
-    <text class='infoItem'>份数：{{item.count}}份</text>
-    <text class='infoItem'>页数：{{item.pages}}页/份</text>
+    <text class='orderItemBox'>{{item.type}}</text>
+    <text class='orderItemBox'>{{item.colorType}}</text>
+    <text class='orderItemBox'>{{item.count}}份</text>
+    <text class='orderItemBox'>{{item.pages}}页/份</text>
+  </view>
+  <!-- <view>
+    <text class='orderItemBox'>类型：{{item.type}}</text>
+    <text class='orderItemBox'>规则：{{item.colorType}}</text>
   </view>
   <view>
-    <text class='infoItem'>备注：{{item.extra}}</text>
+    <text class='orderItemBox'>份数：{{item.count}}份</text>
+    <text class='orderItemBox'>页数：{{item.pages}}页/份</text>
+  </view> -->
+</view>
+<view class='shopName orderItem'>
+  <text>配送费：</text>
+  <text class='rt'>￥{{deliverFee}}</text>
+</view>
+<view class='totalFeeBox'>
+  <text>合计：</text>
+  <text class='rt totalFee'>￥{{totalFee}}</text>
+</view>
+<button type="default" size="{{default}}" plain="{{false}}" bindtap="contactShop">
+  <i class="icon iconfont icon-dianhua"></i>
+  联系商家
+</button>
+
+<view class='orderExtra'>
+  <view class='extraItem'>
+    <text class='extraTitle'>订单编号：</text>{{orderCode}}
+  </view>
+  <view>
+    <view class='extraItem'>
+      <text class='extraTitle'>配送地址：</text>{{deliverAddr}}
+    </view>
+    <view class='extraItem'>
+      <text class='extraTitle'>配送费用：</text>{{deliverFee}}元
+    </view>
+  </view>
+  <view>
+    <view class='extraItem'>
+      <text class='extraTitle'>自取地址：</text>{{shopAddr}}
+    </view>
+    <view class='extraItem'>
+      <text class='extraTitle'>自取编码：</text>{{deliverByselfCode}}
+    </view>
+  </view>
+  <view class='extraItem'>
+    <text class='extraTitle'>订单备注：</text>{{extra}}
   </view>
 </view>
+
 <!-- <map bindmarkertap="markertap" longitude="116.38" latitude="39.90"></map> -->

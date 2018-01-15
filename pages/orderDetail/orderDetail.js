@@ -3,21 +3,50 @@
 var app = getApp()
 Page({
   data: {
-    infoArea: [
-      { title: '打印1.doc', type: 'A4', colorType: '彩色双面', count: 2, pages: 20, extra: '尽快送达' },
-      // { title: '打印2.doc', type: 'B5', colorType: '黑白单面', count: 3, pages: 10, extra: '横边装订' }
+    orderItem: [
+      { title: '打印1.doc', type: 'A4', colorType: '彩色双面', count: 2, pages: 20, money: 11 },
+      { title: '打印1.doc', type: 'A4', colorType: '彩色双面', count: 2, pages: 20, money: 50 },
     ],
+    shopName: '',
+    deliverFee: 12,
+    deliverAddr: '朝阳区朝阳区',
+    totalFee: 62,
+    orderCode: 123456778,
+    extra: '尽快送达',
+    shopAddr: '创业孵化中心',
+    deliverByselfCode: '120236548795',
   },
-  onLoad: function () {
-    console.log('onLoad test');
+  onLoad: function (options) {
+    var that = this;
+    // 自取时取出缓存中商铺id判断自取点的文本
+    wx.getStorage({
+      key: 'shopIndex',
+      success: function (res) {
+        if (res.data == '0') {
+          that.setData({
+            shopName: '农大店'
+          })
+        } else if (res.data == '1') {
+          that.setData({
+            shopName: '师院店'
+          })
+        }
+      }
+    });
+    // 取出店铺地址
+    // wx.getStorage({
+    //   key: 'shopAddr',
+    //   success: function (res) {
+    //     console.log('shopAddr', res.data)
+    //   }
+    // })
+
   },
-  // goShop: function (e) {
-  //   var shopId = e.currentTarget.dataset.shopid;
-  //   console.log(shopId);
-  //   wx.navigateTo({
-  //     url: '../ordersubmit/ordersubmit'
-  //   })
-  // },
+  contactShop: function () {
+    wx.makePhoneCall({
+      phoneNumber: '1340000' //假数据 后期需要真实联系方式
+    })
+  },
   // markertap: function () {
   //   wx.getLocation({
   //     type: 'wgs84',

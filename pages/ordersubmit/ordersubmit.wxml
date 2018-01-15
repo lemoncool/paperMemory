@@ -4,7 +4,7 @@
   <div class="weui-cells weui-cells_form">
     <div class="weui-cell">
       <label class="weui-label">手机</label>
-      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+      <input class="weui-input" type="number" placeholder="请输入手机号" />
     </div>
     <div class="weui-cell">
       <label for="" class="weui-label">文件</label>
@@ -12,7 +12,7 @@
     </div>
     <div class="weui-cell">
       <label for="" class="weui-label">页数</label>
-      <input class="weui-input" type="datetime-local" value="" placeholder="输入正确的页数" />
+      <input class="weui-input" type="number" value="" placeholder="输入正确的页数" />
     </div>
   </div>
   <div class="block"></div>
@@ -20,7 +20,7 @@
   <div class="weui-cells weui-cells_form">
     <div class="weui-cell">
       <label class="weui-label">份数</label>
-      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入正确的文件份数" />
     </div>
     <div class="weui-cell weui-cell_select weui-cell_select-after">
       <label for="" class="weui-label">纸型</label>

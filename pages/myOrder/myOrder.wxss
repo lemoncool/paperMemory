@@ -14,11 +14,14 @@
   width: 70%;
   margin-right: 15rpx;
 }
+
 .btn_mini {
-  width:160rpx;
-  height:70rpx;
+  width: 160rpx;
+  height: 68rpx;
   line-height: 70rpx;
-  font-size: 13px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
   color: #fff;
   margin-right: 20rpx;
   display: inline-block;

@@ -3,11 +3,11 @@
   <div class="weui-cells">
     <view class="weui-cell">
       <label class="weui-label">学校名称</label>
-      <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+      <input class="weui-input" type="text" placeholder="请输入学校名称" />
     </view>
     <view class="weui-cell">
       <label for="" class="weui-label">联系方式</label>
-      <input class="weui-input" type="date" value="" />
+      <input class="weui-input" type="number" value="" placeholder="请输入联系方式" />
     </view>
   </div>
   <view class="block"></view>
@@ -74,6 +74,6 @@
     </view>
     <!--钱数结算  -->
     <view class='totalMoney'>￥{{money}}</view>
-    <button class="weui-btn weui-btn_primary" size="{{default}}" disabled="{{false}}" bindtap="submit"> 确认支付 </button>
+    <button class="weui-btn weui-btn_primary" size="{{default}}" disabled="{{false}}" bindtap="commitPay"> 确认支付 </button>
   </div>
 </view>

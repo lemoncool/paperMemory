@@ -41,7 +41,59 @@
   margin-right: 20rpx;
 }
 
+.proItem_now .time {
+  margin-right: 20rpx;
+}
+
 .infoItem {
   margin-right: 100rpx;
   font-size: 16px;
+}
+
+.shopName {
+  padding: 15rpx 15px 0 15px;
+}
+
+.orderItem {
+  padding: 15rpx 15px;
+  background: #f8f8f8;
+  margin-top: 15rpx;
+}
+
+.orderItemBox {
+  font-size: 14px;
+  margin-right: 40rpx;
+  color: #9f9f9f;
+}
+
+.orderExtra {
+  font-size: 15px;
+  padding: 15px;
+}
+
+.extraItem {
+  padding-top: 15rpx;
+}
+
+.extraItem:first {
+  padding-top: 0;
+}
+
+.extraTitle {
+   color: #9f9f9f;
+}
+
+.totalFee {
+  color: #f74d52;
+  font-size: 17px;
+}
+
+.totalFeeBox {
+  padding: 15px;
+}
+
+.telIcon {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
 }
