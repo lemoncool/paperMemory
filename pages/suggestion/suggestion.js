@@ -34,6 +34,7 @@ Page({
     wx.showModal({
       title: '提示',
       content: '输入信息不可为空',
+      showCancel:false,
       success: function (res) {
         if (res.confirm) {
           return

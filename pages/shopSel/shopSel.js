@@ -25,8 +25,17 @@ Page({
     shopIndex: '',
     // message: 'Hello MINA!'
   },
-  onLoad: function () {
-
+  onLaunch: function () {
+    wx.getUserInfo({
+      success: function (res) {
+        console.log('获取到的信息', res);
+        // that.setData({
+        //   nickName: res.userInfo.nickName,
+        //   avatarUrl: res.userInfo.avatarUrl,
+        // })
+      }
+    })
+  
   },
   goShop: function (e) {
     var shopId = e.currentTarget.dataset.shopid;

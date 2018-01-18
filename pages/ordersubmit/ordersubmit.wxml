@@ -8,7 +8,7 @@
     </div>
     <div class="weui-cell">
       <label for="" class="weui-label">文件</label>
-      <input class="weui-input" type="file" value="" />
+      <input class="weui-input" type="file" value="" bindtap="uploadImage"/>
     </div>
     <div class="weui-cell">
       <label for="" class="weui-label">页数</label>
@@ -51,5 +51,5 @@
   <!--钱数结算  -->
   <view class='totalMoney'>￥{{money}}</view>
   <!--提交按钮  -->
-  <button class="weui-btn weui-btn_primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="submit" bindtap="jumpToPay"> 提交订单 </button>
+  <button class="weui-btn weui-btn_primary" size="{{primarySize}}" disabled="{{disabled}}" bindtap="jumpToPay"> 提交订单 </button>
 </view>
