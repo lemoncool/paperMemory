@@ -1,16 +1,18 @@
 {
   "pages": [
-    "pages/myOrder/myOrder",
-    "pages/shopSel/shopSel",
-    "pages/orderDetail/orderDetail",
+      "pages/shopSel/shopSel",
+      "pages/myInfo/myInfo",
+  
     "pages/ordersubmit/ordersubmit",
+   
+    "pages/myOrder/myOrder",
+    "pages/orderDetail/orderDetail",
     "pages/pay/pay",
     "pages/myAddr/myAddr",
     "pages/addAddress/addAddress",
-    "pages/myInfo/myInfo",
-   
+  
     "pages/suggestion/suggestion",
-    "pages/index/index" 
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
